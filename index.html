@@ -10,168 +10,120 @@
 <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/style.css">
 <meta name="theme-color" content="#F26B38">
+
 <style>
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Arial', sans-serif;
-        background: #ffe6e6;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-    }
+  /* Mobile friendly adjustments */
+  body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      overflow-x: hidden;
+  }
 
-    #card {
-        width: 95vw;
-        max-width: 400px;
-        background: #fff;
-        border-radius: 15px;
-        box-shadow: 0 5px 25px rgba(0,0,0,0.3);
-        overflow: hidden;
-        position: relative;
-        animation: fadeIn 1s ease;
-    }
+  #card, #card-front, #card-inside {
+      width: 95vw;
+      max-width: 400px;
+      margin: 0 auto;
+      box-sizing: border-box;
+  }
 
-    .wrap {
-        padding: 15px;
-    }
+  .wrap {
+      padding: 10px;
+  }
 
-    .wishesFont {
-        font-size: 1rem;
-        line-height: 1.5;
-        text-align: center;
-        color: #333;
-    }
+  .wishesFont {
+      font-size: 1rem;
+      line-height: 1.4;
+      word-break: break-word;
+  }
 
-    .signed {
-        margin-top: 20px;
-        font-weight: bold;
-        color: #F26B38;
-    }
+  .polaroid .img {
+      background-size: cover !important;
+      background-position: center !important;
+  }
 
-    #card-front {
-        position: relative;
-        width: 100%;
-    }
+  #cake {
+      width: 90%;
+      max-width: 300px;
+      height: auto;
+  }
 
-    .cake_and_velas {
-        text-align: center;
-        margin: 20px 0;
-    }
+  button#open, button#close {
+      padding: 8px 12px;
+      font-size: 1.2rem;
+  }
 
-    #cake {
-        width: 90%;
-        max-width: 250px;
-        height: auto;
-    }
+  @media (max-width: 400px) {
+      .wishesFont {
+          font-size: 0.9rem;
+      }
 
-    .polaroid {
-        width: 100%;
-        max-width: 250px;
-        margin: 0 auto;
-        border: 5px solid #fff;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        border-radius: 10px;
-        overflow: hidden;
-    }
+      #cake {
+          width: 80%;
+      }
 
-    .img {
-        width: 100%;
-        padding-top: 100%; /* square */
-        background-size: cover;
-        background-position: center;
-    }
+      .polaroid {
+          max-width: 200px;
+      }
 
-    button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: #F26B38;
-        border: none;
-        color: #fff;
-        font-size: 1.5rem;
-        padding: 10px 15px;
-        border-radius: 50%;
-        cursor: pointer;
-        z-index: 10;
-    }
-
-    #open { right: 10px; }
-    #close { left: 10px; }
-
-    @keyframes fadeIn {
-        from {opacity: 0;}
-        to {opacity: 1;}
-    }
-
-    /* Mobile adjustments */
-    @media (max-width: 400px) {
-        .wishesFont {
-            font-size: 0.9rem;
-            line-height: 1.4;
-        }
-
-        #cake {
-            width: 80%;
-        }
-
-        .polaroid {
-            max-width: 200px;
-        }
-
-        button {
-            font-size: 1.2rem;
-            padding: 8px 12px;
-        }
-    }
+      button#open, button#close {
+          padding: 6px 10px;
+          font-size: 1rem;
+      }
+  }
 </style>
 </head>
 <body>
+<br><br><br><br><br>
 <div id="card">
-    <div id="card-inside">
-        <div class="wrap wishesFont">
-            <p>Happy Anniversary, my love. Being your wife has been the greatest blessing of my life. Through every challenge and every joy, your strength, patience, and unwavering support have been my safe place.</p>
-            <p>It’s time to celebrate this wonderful milestone in your life. Another year of challenges overcome, and a new year to make new memories together.</p>
-            <p>Just wanna say something: You are not just my husband, but my best friend, my partner, and the home my heart always returns to. I am deeply grateful for the love we share and the life we are building together.</p>
-            <p class="signed">From Your Lovely Wife<br>Aneela Ikram</p>
+  <div id="card-inside">
+    <div class="wrap wishesFont">
+      <center>Happy Anniversary, my love. Being your wife has been the greatest blessing of my life. Through every challenge and every joy, your strength, patience, and unwavering support have been my safe place &nbsp; </p>
+        <p> It’s time to celebrate this wonderful milestone in your life. Another year of challenges overcome, and a new year to make new memo
+        <p> ries together.
+          <br>
+          <p> Just wanna say you Something</p>
+          You are not just my husband, but my best friend, my partner, and the home my heart always returns to. I am deeply grateful for the love we share and the life we are building together
+      </p>
+      </center>
+      <p class="signed">From Your Lovely Wife
+        <br> Aneela Ikram
+      </p>
+    </div>
+  </div>
+
+  <div id="card-front">
+    <div class="wrap">
+      <h1>Happy Anniversary</h1>
+      <div class="cake_and_velas">
+        <div class="velas">
+          <div class="fuego"></div>
+          <div class="fuego"></div>
+          <div class="fuego"></div>
+          <div class="fuego"></div>
+          <div class="fuego"></div>
         </div>
+        <svg id="cake" version="1.1" x="0px" y="0px" viewBox="0 0 200 500" enable-background="new 0 0 200 500" xml:space="preserve">
+          <!-- Your existing SVG code here -->
+        </svg>
+      </div>
     </div>
 
-    <div id="card-front">
-        <div class="wrap">
-            <h1 style="text-align:center; color:#F26B38;">Happy Anniversary</h1>
-            <div class="cake_and_velas">
-                <svg id="cake" viewBox="0 0 200 500">
-                    <!-- Aapka existing SVG yahan paste karein -->
-                </svg>
-            </div>
-        </div>
-
-        <div class="card-front_inside">
-            <div class="polaroid">
-                <div class="img" style="background-image: url('IMG-20251226-WA0012.jpg')"></div>
-            </div>
-        </div>
+    <div class="card-front_inside">
+      <br> <br> <br>
+      <div class="polaroid">
+        <div class="img" style="background-image: url('IMG-20251226-WA0012.jpg')"></div>
+      </div>
+      <div class="shadow"></div>
     </div>
+  </div>
 
-    <button id="open" data-balloon="Click to Open Card!" data-balloon-length="medium">&gt;</button>
-    <button id="close" data-balloon="Close Card" data-balloon-length="medium">&lt;</button>
+  <button id="open" data-balloon="Click to Open Card!" data-balloon-length="medium" data-balloon-pos="left">&gt;</button>
+  <button id="close" data-balloon="! bɿɒɔ ɘƨolɔ oɈ ʞɔilƆ" data-balloon-length="medium" data-balloon-pos="left">&lt;</button>
 </div>
 
-<script>
-    const card = document.getElementById('card-inside');
-    const openBtn = document.getElementById('open');
-    const closeBtn = document.getElementById('close');
-
-    openBtn.addEventListener('click', () => {
-        card.style.display = 'block';
-    });
-
-    closeBtn.addEventListener('click', () => {
-        card.style.display = 'none';
-    });
-</script>
+<script src="js/index.js"></script>
 </body>
 </html>
