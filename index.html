@@ -12,10 +12,11 @@
 <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/style.css">
 <meta name="theme-color" content="#F26B38">
 
 <style>
-  /* Body center & mobile responsive */
+  /* Center everything for mobile */
   body {
     display: flex;
     justify-content: center;
@@ -24,7 +25,6 @@
     margin: 0;
     padding: 0;
     background: #fff;
-    font-family: sans-serif;
   }
 
   #card {
@@ -65,37 +65,13 @@
     bottom: 10px;
     left: 10px;
     z-index: 10;
-    background: #F26B38;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
   }
 
-  /* Heading responsive */
-  h1 {
-    text-align: center;
-    font-size: 2rem;
-    margin: 10px 0;
-  }
-
-  /* Small screens adjustments */
   @media screen and (max-width: 480px) {
-    .wishesFont {
-      font-size: 0.9rem;
-    }
-    h1 {
-      font-size: 1.5rem;
-    }
-    #open, #close {
-      font-size: 0.9rem;
-      padding: 8px 12px;
-    }
+    .wishesFont { font-size: 0.9rem; }
+    h1 { font-size: 1.5rem; text-align: center; }
   }
 </style>
-
 </head>
 <body>
 <br><br><br><br><br>
@@ -103,9 +79,10 @@
   <div id="card-inside">
     <div class="wrap wishesFont">
       <center>
-        <p>Happy Anniversary, my love. Being your wife has been the greatest blessing of my life. Through every challenge and every joy, your strength, patience, and unwavering support have been my safe place.</p>
+        <p>Happy Anniversary, my love. Being your wife has been the greatest blessing of my life. Through every challenge and every joy, your strength, patience, and unwavering support have been my safe place &nbsp;</p>
         <p>It’s time to celebrate this wonderful milestone in your life. Another year of challenges overcome, and a new year to make new memories together.</p>
-        <p>Just wanna say you something: You are not just my husband, but my best friend, my partner, and the home my heart always returns to. I am deeply grateful for the love we share and the life we are building together.</p>
+        <p>Just wanna say you Something</p>
+        <p>You are not just my husband, but my best friend, my partner, and the home my heart always returns to. I am deeply grateful for the love we share and the life we are building together.</p>
       </center>
       <p class="signed">From Your Lovely Wife<br> Aneela Ikram</p>
     </div>
@@ -122,10 +99,7 @@
           <div class="fuego"></div>
           <div class="fuego"></div>
         </div>
-        <!-- SVG cake remains the same -->
-        <svg id="cake" version="1.1" x="0px" y="0px" width="290px" height="500px" viewBox="0 0 200 500" enable-background="new 0 0 200 500" xml:space="preserve">
-          <!-- SVG paths copied as in original code -->
-        </svg>
+        <!-- Original SVG cake stays as it is -->
       </div>
     </div>
 
